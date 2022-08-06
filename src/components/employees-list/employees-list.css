@@ -1,0 +1,32 @@
+.app-list {
+    margin-top: 30px;
+    background-color: #3d5a80;
+    border-radius: 4px;
+    box-shadow: 15px 15px 30px rgba(0,0,0, .15);
+    color: #fff;
+}
+
+.is-empty {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.employee-table {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.employee-table-col.lg {
+    width: 69%;
+}
+
+.employee-table-col.sm {
+    width: 31%;
+}
+
+.employee-table-col h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
