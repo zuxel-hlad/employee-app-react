@@ -3,8 +3,6 @@ import {
   useContext,
   useState,
   useEffect,
-  ueseMemo,
-  useMemo,
 } from 'react';
 
 const EmployeesContext = createContext(null);
