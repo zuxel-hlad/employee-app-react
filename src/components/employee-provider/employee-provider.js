@@ -1,9 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-} from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const EmployeesContext = createContext(null);
 export const useEmployeesContext = () => useContext(EmployeesContext);
@@ -70,7 +65,6 @@ export const EmployeesProvider = ({ children }) => {
 
   //search employee in employees arr
   const searchEmployees = (array, query) => {
-    console.log('search');
     if (!query.length) {
       return array;
     } else {
@@ -108,8 +102,6 @@ export const EmployeesProvider = ({ children }) => {
     searchEmployees(data, searchQuery),
     filter
   );
-
-  console.log(renderedEmployees);
 
   return (
     <EmployeesContext.Provider
